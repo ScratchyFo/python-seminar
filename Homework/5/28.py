@@ -4,13 +4,16 @@
 # Также нельзя использовать циклы.
 # 2 2
 # 4
-
-def requr(a,b):
-    if b ==0:
+def recursion(a,b):
+    if b == 0:
         return 1
     else:
-        return a* requr(a,b-1)
-
+        return a* recursion(a,b -1)
+    
+print('Введите первое число: ')
 a= int(input())
+
+print('Введите второе число: ')
 b= int(input())
-print(requr(a,b))
+
+print(recursion(a,b))
